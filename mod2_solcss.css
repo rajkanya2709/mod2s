@@ -1,0 +1,105 @@
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+} 
+
+h1 {
+  color: purple;
+  text-align: center;
+}
+
+p {
+  border: 2px solid white;
+  padding: 10px;
+  margin: 10px;
+  font-size: 60px; 
+
+}
+
+body{
+  background-color: black;
+  position: relative;
+}
+
+ .container {
+  position: relative;
+  background-color: lightpink;
+  border: 2px solid white;
+  height: 500px;
+}
+
+  #p1{
+    background-color: skyblue;
+    position: relative;
+    padding: 10px;
+    margin: all;
+    width:300px;
+    height:300px;
+}
+
+  #p2{
+    position: relative;
+    float: right;
+    background-color: lightblue;
+    width: 2px;
+    height: 2px;
+  }
+
+div{
+   border: 2px solid white;
+}
+
+ div.container {
+  /**position: relative;
+  background-color: lightpink;
+  border: 2px solid white; **/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+ } 
+
+.row {
+  width: 100%;
+}
+
+/* Desktop view */
+
+@media (min-width: 992px) {
+ #p1 {
+    width: 30%;
+    float: left;
+  }
+   #p2{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Tablet view */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #p1 {
+    width: 45%;
+    float: left;
+  }
+   #p2{
+    width: 100px;
+    height: 100px;
+  }
+}
+  
+/* Mobile view */
+
+@media (max-width: 767px) {
+  #p1 {
+    width: 100%;
+    float: left;
+  }
+   #p2{
+    width: 70px;
+    height: 70px;
+  }
+}
